@@ -1,0 +1,53 @@
+@import './Helper.css';
+
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+
+}
+*,*:after,*:before{
+    box-sizing: inherit;
+}
+
+body{
+    line-height: 1.6;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    text-decoration: none;
+    list-style: none ;   
+    background-color: var(--gray1f2f6fc) !important;
+    direction: rtl;
+    font-family:Yekan,calibri !important;
+  
+}
+@font-face {
+    font-family: 'Yekan';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../../fonts/Yekan.woff') format('woff2');
+}
+
+a,ul,li{
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+:root{
+    --white1ffffff:#ffffff;
+    --white2fafaff:#fafaff;
+    --gray3bbcbbb:rgb(187, 203, 187);
+    --gray2f0f0ff: #f0f0ff;
+    --gray1f2f6fc:#f2f6fc;
+    /* --black:#101011; */
+    --black1464646:#464646;
+    --black22e2e2e:#2e2e2e;
+    --black33b4359:rgb(116 117 117);
+    --white-50:rgb(3, 3, 3);
+
+    --them:rgb(20, 165, 175);
+ }
+ .container{
+    /* max-width: 95vw !important; */
+ }
