@@ -1,8 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
+import {Link} from 'react-router-dom'
 
 
 export default function Header() {
+const [flag,setFlag]=useState(false)
+const [flag2,setFlag2]=useState(false)
+const [flag3,setFlag3]=useState(false)
+
+const onmousHandle=(e)=>{
+  if(e.target.value==0){
+    setFlag(true)
+    setFlag2(false)
+    setFlag3(false)
+  }
+ else if(e.target.value==2){
+    setFlag2(true)
+    setFlag(false)
+    setFlag3(false)
+  }else if(e.target.value==4){
+    setFlag3(true)
+    setFlag(false)
+    setFlag2(false)
+
+  }
+  console.log('first')
+  // console.log(e.target.value)
+  // setFlag(prev=>!prev)
+  // return()=>setFlag(false)
+  // console.log(flag)
+
+}
+
+
+
   return (
     <div className='container Header'>
 
@@ -34,15 +65,51 @@ export default function Header() {
   <ul className='header-bottom__col__ul centerr'>
         <li className='arrow-icon'>دسته بندی ها
         <ul className='header-bottom__col__ul__ul centerc '>
-          <li>کیبرد
-            <ul className='header-bottom__col__ul__ul__ul'>
-              <li>کیبرد1</li>
-              <li>کیبرد2</li>
-              <li>کیبرد3</li>
-            </ul>
+          <li value={0} onMouseEnter={onmousHandle} className={flag ? 'liiii2-a' :'liiii2' } >لوازم جانبی 
+          <div className='header-bottom__col__ul__ul__ul centerr'>
+            <div className={flag ? 'a' : 'b'}>
+              {/* <span className='header-bottom__col__ul__ul__ul__link'>sadsd</span> */}
+              <Link className='header-bottom__col__ul__ul__ul__link2'>کیبرد</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>هدفون</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>اسپیکر</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>اسپیکر</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>اسپیکر</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>اسپیکر</Link>
+            </div>
+            </div>
           </li>
-          <li>هدفون</li>
-          <li>اسیکر</li>
+          <li value={2} onMouseEnter={onmousHandle} className={flag2 ? 'liiii2-a' :'liiii2' }>سخت افزار
+          <div className='header-bottom__col__ul__ul__ul centerr'>
+            <div className={flag2 ? 'a' : 'b'}>
+
+               <Link className='header-bottom__col__ul__ul__ul__link2'>هارد</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>رم</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>سی پی یو</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>مادربرد</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>پاور</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>کیس</Link>
+            </div>
+              
+            
+         
+              </div>
+          </li>
+          <li value={4} onMouseEnter={onmousHandle} className={flag3 ? 'liiii2-a' :'liiii2' }>لپ تاپ 
+          <div className='header-bottom__col__ul__ul__ul centerr'>
+            <div  className={flag3 ? 'a' : 'b'}>
+
+               <Link className='header-bottom__col__ul__ul__ul__link2'>adasd</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>asdasd</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>سی پی asd</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>مادربرد</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>پاور</Link>
+              <Link className='header-bottom__col__ul__ul__ul__link2'>کیس</Link>
+            </div>
+              
+            
+         
+              </div>
+          </li>
         </ul>
         </li>
         <li>فروش اقساط</li>
