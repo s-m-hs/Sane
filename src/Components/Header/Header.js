@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef,useMemo } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
 // import { useEffect, useState } from "react";
@@ -10,7 +10,7 @@ import DecodeAnimation from "react-decode-animation";
 
 
 
-const TEXTS = ["", "به فروشگاه صانع", "بزرگترین مجموعه فروش ملزومات وقطعات رایانه ای ", "خوش آمدید:)"];
+const TEXTS = ["", "به فروشگاه صانع", "بزرگترین مجموعه فروش ملزومات وقطعات رایانه ای ", "خوش آمدید"];
 
 export default function Header() {
   const [flag, setFlag] = useState(false)
@@ -67,57 +67,60 @@ export default function Header() {
   return (
     <div className='container Header'>
 
-      <div className='row Header-top mt-3 centerr'>
-        <div className="col-12 col-md-8 Header-rightSide centerr ">
-          <div className='Header-rightSide__div-img'>
-            <img className='Header-rightSide__img' src="../../images/photo_2024-05-30_19-08-29.jpg" alt="" />
+{useMemo(()=>{
+  return   <div className='row Header-top mt-3 centerr'>
+  <div className="col-12 col-md-8 Header-rightSide centerr ">
+    <div className='Header-rightSide__div-img'>
+      <img className='Header-rightSide__img' src="../../images/photo_2024-05-30_19-08-29.jpg" alt="" />
 
-            {/* <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'خوش آمدید به ',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'کامپیوتر صانع',
-        1000,
-     
-      ]}
-      wrapper="span"
-      speed={50}
-      style={{ fontSize: '2em', display: 'inline-block' }}
-      repeat={Infinity}
-    /> */}
-          </div>
-          {/* <div style={{margin:'auto',color:'rgb(116 117 117)',fontSize:'25px'}}>
-			<DecodeAnimation
-				ref={ref}
+      {/* <TypeAnimation
+sequence={[
+  // Same substring at the start will only be typed out once, initially
+  'خوش آمدید به ',
+  1000, // wait 1s before replacing "Mice" with "Hamsters"
+  'کامپیوتر صانع',
+  1000,
 
-				autoplay // will play when rendered
-				text={"به کامپیوتر صانع خوش آمدید"}
-			/>
-		
-		</div> */}
+]}
+wrapper="span"
+speed={50}
+style={{ fontSize: '2em', display: 'inline-block' }}
+repeat={Infinity}
+/> */}
+    </div>
+    {/* <div style={{margin:'auto',color:'rgb(116 117 117)',fontSize:'25px'}}>
+<DecodeAnimation
+  ref={ref}
 
-          <h1 style={{ margin: 'auto', color: 'rgb(116 117 117)' }}>
-            <TextTransition springConfig={presets.wobbly}>
-              {TEXTS[textIndex % TEXTS.length]}{" "}
-            </TextTransition>
-          </h1>
+  autoplay // will play when rendered
+  text={"به کامپیوتر صانع خوش آمدید"}
+/>
 
-        </div>
-        <div className="col-12 col-md-4 Header-leftSide centerr">
-          <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-bag-shopping fa-xl" style={{ color: '#ffffff' }}  ></i></div>
-          <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-magnifying-glass fa-xl" style={{ color: '#ffffff' }} ></i>    </div>
-          <div className='Header-leftSide__div centerr'> <i class="fa-regular fa-user fa-xl" style={{ color: '#ffffff' }}></i></div>
+</div> */}
+
+    <h1 style={{ margin: 'auto', color: 'rgb(116 117 117)' }}>
+      <TextTransition springConfig={presets.wobbly}>
+        {TEXTS[textIndex % TEXTS.length]}{" "}
+      </TextTransition>
+    </h1>
+
+  </div>
+  <div className="col-12 col-md-4 Header-leftSide centerr">
+    <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-bag-shopping fa-xl" style={{ color: '#ffffff' }}  ></i></div>
+    <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-magnifying-glass fa-xl" style={{ color: '#ffffff' }} ></i>    </div>
+    <div className='Header-leftSide__div centerr'> <i class="fa-regular fa-user fa-xl" style={{ color: '#ffffff' }}></i></div>
 
 
-          <div className="col-lg-4 Header-leftSide__number-div centerr">
-            <span>02191005457</span>
-            <i class="fa-solid fa-phone" style={{ color: '#ffffff' }}></i>
-          </div>
+    <div className="col-lg-4 Header-leftSide__number-div centerr">
+      <span>02191005457</span>
+      <i class="fa-solid fa-phone" style={{ color: '#ffffff' }}></i>
+    </div>
 
-        </div>
-      </div>
+  </div>
+</div>
+},[textIndex])}
 
+    
 
 
       <div className="row header-bottom">
