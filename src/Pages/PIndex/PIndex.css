@@ -1,0 +1,19 @@
+.pindex-swiper-container{
+    width: 100%;
+    height: 500px;
+}
+.pindex-swiper-row{
+    width: 100%;
+    height: 100%;
+}
+.pindex-swiper-col{
+    height: inherit;
+}
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+  }

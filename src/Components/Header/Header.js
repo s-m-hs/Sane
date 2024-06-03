@@ -1,9 +1,12 @@
 import React, { useEffect, useState, useRef,useMemo } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
-// import { useEffect, useState } from "react";
-import TextTransition, { presets } from "react-text-transition";
-import DecodeAnimation from "react-decode-animation";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cube';
+import 'swiper/css/pagination';
+
+import {Autoplay, EffectCube, Pagination } from 'swiper/modules';
 
 
 
@@ -13,57 +16,15 @@ import DecodeAnimation from "react-decode-animation";
 const TEXTS = ["", "به فروشگاه صانع", "بزرگترین مجموعه فروش ملزومات وقطعات رایانه ای ", "خوش آمدید"];
 
 export default function Header() {
-  // const [flag, setFlag] = useState(false)
-  // const [flag2, setFlag2] = useState(false)
-  // const [flag3, setFlag3] = useState(false)
-  // const [flag4, setFlag4] = useState(false)
   const [valeS,setValue]=useState(0)
-  const ref = useRef(null);
-  const [textIndex, setTextIndex] = useState(0);
 
 
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTextIndex((index) => index + 1);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-console.log(valeS)
 
 
   const onmousHandle = (e) => {
     if(e.target.value){
       setValue(e.target.value)
     }
-
-
-  //   if (e.target.value == 0) {
-  //  setFlag(true)
-  //  setFlag2(false)
-  //  setFlag3(false)
-  //  setFlag4(false)
-
-
-  //   }
-  //   else if (e.target.value == 2) {
-  //     setFlag(false)
-  //     setFlag2(true)
-  //     setFlag3(false)
-  //     setFlag4(false)
-
-  //   } else if (e.target.value == 4) {
-  //     setFlag(false)
-  //     setFlag2(false)
-  //     setFlag3(true)
-  //     setFlag4(false)
-  //   } else if (e.target.value == 6) {
-  //     setFlag(false)
-  //  setFlag2(false)
-  //  setFlag3(false)
-  //  setFlag4(true)
-  //   }
   }
 
 
@@ -71,41 +32,54 @@ console.log(valeS)
   return (
     <div className='container Header'>
 
-{useMemo(()=>{
-  return   <div className='row Header-top mt-3 centerr'>
+
+ <div className='row Header-top mt-3 centerr'>
   <div className="col-12 col-md-8 Header-rightSide centerr ">
     <div className='Header-rightSide__div-img'>
-      <img className='Header-rightSide__img' src="../../images/photo_2024-05-30_19-08-29.jpg" alt="" />
 
-      {/* <TypeAnimation
-sequence={[
-  // Same substring at the start will only be typed out once, initially
-  'خوش آمدید به ',
-  1000, // wait 1s before replacing "Mice" with "Hamsters"
-  'کامپیوتر صانع',
-  1000,
+    <div style={{ width:'148px',height:'112px'}}>
 
-]}
-wrapper="span"
-speed={50}
-style={{ fontSize: '2em', display: 'inline-block' }}
-repeat={Infinity}
-/> */}
-    </div>
-    <div style={{ margin: 'auto',fontSize:'18px', color: 'rgb(116 117 117)',paddingBottom:'30px',paddingTop:'30px' }}>
-<DecodeAnimation
-  ref={ref}
-  autoplay // will play when rendered
-  text={"به مجموعه صانع بزرگترین فروشگاه ملزومات لوازم رایانه ای در استان قم خوش آمدید"}
-/>
-
+    <>
+      <Swiper
+     
+          loop={true}
+       autoplay={{
+        delay: 1000,
+        disableOnInteraction: false,
+      }}
+        effect={'cube'}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={ true}
+        modules={[Autoplay,EffectCube, Pagination,]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img src="../../images/photo_2024-05-30_19-08-29.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="../../images/photo_2024-05-30_19-08-24.jpg"  />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img  src="../../images/1005639-خنده-دار-اقامت-ربات-سفید.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img  src="../../images/1480096-فروش-برچسب-50٪-تخفیف.jpg" />
+        </SwiperSlide>
+      </Swiper>
+    </>
 </div>
 
-    {/* <h1 style={{ margin: 'auto', color: 'rgb(116 117 117)',paddingBottom:'30px' }}>
-      <TextTransition springConfig={presets.wobbly}>
-        {TEXTS[textIndex % TEXTS.length]}{" "}
-      </TextTransition>
-    </h1> */}
+      {/* <img className='Header-rightSide__img' src="../../images/photo_2024-05-30_19-08-29.jpg" alt="" /> */}
+
+    </div>
+
+
 
   </div>
   <div className="col-12 col-md-4 Header-leftSide centerr">
@@ -121,7 +95,7 @@ repeat={Infinity}
 
   </div>
 </div>
-},[textIndex])}
+
 
     
 

@@ -113,6 +113,7 @@
     justify-content: flex-start !important;
     visibility: hidden;
     pointer-events: none;
+    z-index: 5;
     /* transition: all 600ms ease-in-out;
     animation: move 600ms alternate ease-in-out; */
 }
@@ -197,14 +198,13 @@
 
 
 
-
 .header-bottom__col__ul__ul__ul__link2 {
     text-align: center;
     z-index: 10;
     color: var(--black33b4359);
     text-decoration: none;
     padding: 35px;
-    transition: all 0.2s ease;
+transition: all 0.2s linear;
 }
 
 .header-bottom__col__ul__ul__ul__link2:hover {
