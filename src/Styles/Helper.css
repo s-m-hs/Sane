@@ -27,3 +27,4 @@ transition: all 0.3s ease-in;
 .arrow-icon:hover::before{
     transform:rotate(223deg) 
 }
+

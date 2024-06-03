@@ -12,7 +12,7 @@
 }
 
 .Header-rightSide {
-    justify-content: flex-start !important;
+    justify-content: space-between !important;
     align-items: center;
 }
 

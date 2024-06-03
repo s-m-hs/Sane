@@ -88,21 +88,20 @@ style={{ fontSize: '2em', display: 'inline-block' }}
 repeat={Infinity}
 /> */}
     </div>
-    {/* <div style={{margin:'auto',color:'rgb(116 117 117)',fontSize:'25px'}}>
+    <div style={{ margin: 'auto',fontSize:'18px', color: 'rgb(116 117 117)',paddingBottom:'30px',paddingTop:'30px' }}>
 <DecodeAnimation
   ref={ref}
-
   autoplay // will play when rendered
-  text={"به کامپیوتر صانع خوش آمدید"}
+  text={"به مجموعه صانع بزرگترین فروشگاه ملزومات لوازم رایانه ای در استان قم خوش آمدید"}
 />
 
-</div> */}
+</div>
 
-    <h1 style={{ margin: 'auto', color: 'rgb(116 117 117)' }}>
+    {/* <h1 style={{ margin: 'auto', color: 'rgb(116 117 117)',paddingBottom:'30px' }}>
       <TextTransition springConfig={presets.wobbly}>
         {TEXTS[textIndex % TEXTS.length]}{" "}
       </TextTransition>
-    </h1>
+    </h1> */}
 
   </div>
   <div className="col-12 col-md-4 Header-leftSide centerr">
