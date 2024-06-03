@@ -13,10 +13,11 @@ import DecodeAnimation from "react-decode-animation";
 const TEXTS = ["", "به فروشگاه صانع", "بزرگترین مجموعه فروش ملزومات وقطعات رایانه ای ", "خوش آمدید"];
 
 export default function Header() {
-  const [flag, setFlag] = useState(false)
-  const [flag2, setFlag2] = useState(false)
-  const [flag3, setFlag3] = useState(false)
-  const [flag4, setFlag4] = useState(false)
+  // const [flag, setFlag] = useState(false)
+  // const [flag2, setFlag2] = useState(false)
+  // const [flag3, setFlag3] = useState(false)
+  // const [flag4, setFlag4] = useState(false)
+  const [valeS,setValue]=useState(0)
   const ref = useRef(null);
   const [textIndex, setTextIndex] = useState(0);
 
@@ -29,37 +30,40 @@ export default function Header() {
     return () => clearInterval(interval);
   }, []);
 
+console.log(valeS)
 
 
   const onmousHandle = (e) => {
-
-
-
-    if (e.target.value == 0) {
-   setFlag(true)
-   setFlag2(false)
-   setFlag3(false)
-   setFlag4(false)
-
-
+    if(e.target.value){
+      setValue(e.target.value)
     }
-    else if (e.target.value == 2) {
-      setFlag(false)
-      setFlag2(true)
-      setFlag3(false)
-      setFlag4(false)
 
-    } else if (e.target.value == 4) {
-      setFlag(false)
-      setFlag2(false)
-      setFlag3(true)
-      setFlag4(false)
-    } else if (e.target.value == 6) {
-      setFlag(false)
-   setFlag2(false)
-   setFlag3(false)
-   setFlag4(true)
-    }
+
+  //   if (e.target.value == 0) {
+  //  setFlag(true)
+  //  setFlag2(false)
+  //  setFlag3(false)
+  //  setFlag4(false)
+
+
+  //   }
+  //   else if (e.target.value == 2) {
+  //     setFlag(false)
+  //     setFlag2(true)
+  //     setFlag3(false)
+  //     setFlag4(false)
+
+  //   } else if (e.target.value == 4) {
+  //     setFlag(false)
+  //     setFlag2(false)
+  //     setFlag3(true)
+  //     setFlag4(false)
+  //   } else if (e.target.value == 6) {
+  //     setFlag(false)
+  //  setFlag2(false)
+  //  setFlag3(false)
+  //  setFlag4(true)
+  //   }
   }
 
 
@@ -127,58 +131,62 @@ repeat={Infinity}
           <ul className='header-bottom__col__ul centerr'>
             <li className='arrow-icon'>دسته بندی ها
               <ul className='header-bottom__col__ul__ul centerc '>
-                <li  value={0}
-                  onMouseEnter={onmousHandle}
-                className={flag ? 'liiii2-a' : 'liiii2'}
-                >لوازم جانبی
-                  <div className='container header-bottom__col__ul__ul__ul centerr'>
-                    <div 
-                    className={flag ? 'row-cols-4 ishover' : ' nohover'}
-                    >
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/download.jpg" alt="" />
-                        کیبرد
 
-                      </Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/headphon.jpg" alt="" />
-                        هدفون</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/speaker.jpg" alt="" />
-                        اسپیکر</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/mouse.jpg" alt="" />
-                        موس</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/headphon.jpg" alt="" />
-                        هدفون بی سیم</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/key&mouse.jpg" alt="" />
-                        کیبرد وموس</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/flash).jpg" alt="" />
-                        فلش و رم ریدر</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/powerbonk.jpg" alt="" />
-                        پاوربانک</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/mousepad.jpg" alt="" />
-                        موس پد</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/kable.jpg" alt="" />
-                        کابل</Link>
-                      <Link className='header-bottom__col__ul__ul__ul__link2'>
-                        <img src="../../images/bag.jpg" alt="" />
-                        کیف</Link>
-                    </div>
-                  </div>
-                </li>
+ <li  value={1}
+  onMouseEnter={onmousHandle}
+className={valeS==1 ? 'liiii2-a' : 'liiii2'}
+>لوازم جانبی
+  <div className='container header-bottom__col__ul__ul__ul centerr'>
+    <div 
+    className={valeS==1 ? 'row-cols-4 ishover' : ' nohover'}
+    >
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/download.jpg" alt="" />
+        کیبرد
+
+      </Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/headphon.jpg" alt="" />
+        هدفون</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/speaker.jpg" alt="" />
+        اسپیکر</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/mouse.jpg" alt="" />
+        موس</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/headphon.jpg" alt="" />
+        هدفون بی سیم</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/key&mouse.jpg" alt="" />
+        کیبرد وموس</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/flash).jpg" alt="" />
+        فلش و رم ریدر</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/powerbonk.jpg" alt="" />
+        پاوربانک</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/mousepad.jpg" alt="" />
+        موس پد</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/kable.jpg" alt="" />
+        کابل</Link>
+      <Link className='header-bottom__col__ul__ul__ul__link2'>
+        <img src="../../images/bag.jpg" alt="" />
+        کیف</Link>
+    </div>
+  </div>
+</li>
+
+
+               
                 <li  value={2} onMouseEnter={onmousHandle}
-                className={flag2 ? 'liiii2-a' : 'liiii2'}
+                className={valeS==2 ? 'liiii2-a' : 'liiii2'}
                 >سخت افزار
                   <div className='container header-bottom__col__ul__ul__ul centerr'>
                     <div 
-                       className={flag2 ? 'row-cols-4 ishover' : ' nohover'}
+                       className={valeS==2 ? 'row-cols-4 ishover' : ' nohover'}
                     >
 
                       <Link className='header-bottom__col__ul__ul__ul__link2'>
@@ -212,11 +220,11 @@ repeat={Infinity}
                   </div>
                 </li>
                 <li  value={4} onMouseEnter={onmousHandle}
-                className={flag3 ? 'liiii2-a' : 'liiii2'}
+                className={valeS==4 ? 'liiii2-a' : 'liiii2'}
                 > مبدل ها
                   <div className='container header-bottom__col__ul__ul__ul centerr'>
                     <div 
-                      className={flag3 ? 'row-cols-4 ishover' : ' nohover'}>
+                      className={valeS==4 ? 'row-cols-4 ishover' : ' nohover'}>
 
                       <Link className='header-bottom__col__ul__ul__ul__link2'>
                         <img src="../../images/pci.jpg" alt="" />
@@ -241,11 +249,11 @@ repeat={Infinity}
                   </div>
                 </li>
                 <li  value={6} onMouseEnter={onmousHandle} 
-                className={flag4 ? 'liiii2-a' : 'liiii2'}
+                className={valeS==6 ? 'liiii2-a' : 'liiii2'}
                 >لپ تاپ
                   <div className='container header-bottom__col__ul__ul__ul centerr'>
                     <div 
-                     className={flag4 ? 'row-cols-4 ishover' : ' nohover'}>
+                     className={valeS==6 ? 'row-cols-4 ishover' : ' nohover'}>
 
                       <Link className='header-bottom__col__ul__ul__ul__link2'>
                         <img src="../../images/asus.jpg" alt="" />
