@@ -37,7 +37,7 @@ export default function Header() {
   <div className="col-12 col-md-8 Header-rightSide centerr ">
     <div className='Header-rightSide__div-img'>
 
-    <div style={{ width:'148px',height:'112px'}}>
+    <div style={{ width:'135px',height:'105px'}}>
 
     <>
       <Swiper
