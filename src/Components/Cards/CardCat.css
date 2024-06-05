@@ -1,0 +1,128 @@
+.cardcat-container{
+    
+
+}
+.cardcat__img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 0.9rem;
+}
+.cardcat__img:hover{
+    /* transform: scale(1.5); */
+}
+span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(255, 49, 49, 0.5),
+      rgb(255, 49, 49)
+    );
+  }
+  .top {
+    animation: animateTop 3s ease-in-out infinite;
+  }
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .circle-wrapper {
+    position: relative;
+    width: 16rem;
+    height: 16rem;
+    float: left;
+    margin: 10px;
+
+  }
+  
+  /* .icon {
+    position: absolute;
+    color: #fff;
+    font-size: 55px;
+    top: 55px;
+    left: 55px;
+    transform: translate(-50%, -50%);
+  }
+   */
+  .circle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 5px;
+    background-clip: content-box;
+    animation: spin 20s linear infinite;
+  }
+  
+  .circle-wrapper:hover .circle {
+    animation: spin 4s linear infinite;
+
+  }
+  .circle-wrapper:hover .cardcat__img{
+    transform: scale(1.05);
+
+  }
+  
+  .success {
+    /* background-color: #4BB543; */
+    border: 2.5px dashed var(--them);
+  }
+  @keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  /* .page-wrapper {
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+
+
+
+
+
+
+  
+/* .cardcat__img::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 10;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.cardcat__img:hover::after{
+    border: 3px solid red;
+color: aqua;
+translate: scale(1.5);
+} */
+/* .cardcat__img::after:hover{
+    border: 3px solid red;
+color: aqua;
+} */

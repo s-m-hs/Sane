@@ -13,10 +13,10 @@ import {Autoplay, EffectCube, Pagination } from 'swiper/modules';
 
 
 
-const TEXTS = ["", "به فروشگاه صانع", "بزرگترین مجموعه فروش ملزومات وقطعات رایانه ای ", "خوش آمدید"];
+
 
 export default function Header() {
-  const [valeS,setValue]=useState(0)
+  const [valeS,setValue]=useState(1)
 
 
 
@@ -44,7 +44,7 @@ export default function Header() {
      
           loop={true}
        autoplay={{
-        delay: 1000,
+        delay: 1500,
         disableOnInteraction: false,
       }}
         effect={'cube'}
