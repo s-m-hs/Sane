@@ -17,6 +17,13 @@ export default function PIndex() {
 <BCatItem/>
 <SwiperComB title={'پرفروش ترین ها'}/>
 
+
+<div>
+  
+  asdasdasd
+  
+</div>
+
                      </div>
             </div>
         </div>

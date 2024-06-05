@@ -41,6 +41,7 @@
   }
   .circle-wrapper:hover .cardcat__img{
     transform: scale(1.05);
+    /* transform: translate(-20px, -40px) rotate(-15deg) scale(1.4); */
 
   }
   
