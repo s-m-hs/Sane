@@ -1,0 +1,29 @@
+.mySwiperB{
+    margin-top: 25px;
+    border-radius: 0px;
+    /* background-color: var(--them) !important; */
+
+}
+
+.mySwiperB >.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+
+}
+
+.mySwiperB >.swiper-wrapper >.swiper-slide{
+    /* min-width: 180px !important;
+    min-height: 280px; */
+    /* width: 13cqi !important;
+    height: 22cqi!important; */
+    width: 20rem;
+    height: 40rem;
+}
+.swipercomb-div{
+    margin-top: 80px;
+
+}
+.swipercomb-title{
+
+    font-size: 1.5cqi;
+}

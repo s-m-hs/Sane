@@ -14,12 +14,6 @@ export default function CardCat({imgSrc}) {
         
     </div>
 
-
-
-
-    {/* <div class="icon">
-      <i class="fa fa-check"></i>
-    </div> */}
   </Link>
 
 

@@ -28,6 +28,7 @@
 }
 
 .Header-leftSide__number-div {
+    
     border-radius: 10px;
     width: 9cqi !important;
     height: 2.5cqi;
@@ -80,7 +81,7 @@
 }
 
 .header-bottom__col__ul>li {
-    font-size: 1.9rem;
+    font-size: 1.2cqi;
     padding: 3rem;
     color: var(--black33b4359);
     cursor: pointer;
