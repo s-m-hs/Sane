@@ -47,6 +47,12 @@ a,ul,li{
     --white-50:rgb(3, 3, 3);
 
     --them:rgb(20, 165, 175);
+    --backgroundColor: rgba(246, 241, 209);
+    --colorShadeA: rgb(106, 163, 137);
+    --colorShadeB: rgb(121, 186, 156);
+    --colorShadeC: rgb(150, 232, 195);
+    --colorShadeD: rgb(187, 232, 211);
+    --colorShadeE: rgb(205, 255, 232);
  }
  .container{
     /* max-width: 95vw !important; */

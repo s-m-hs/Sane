@@ -16,14 +16,25 @@ margin: 15px;
 }
 .cardpro__link{
     justify-self: flex-end !important;
-    background-color: var(--them);
-    color: var(--white1ffffff);
+    /* background-color: var(--black33b4359); */
+    border:1px solid var(--them) ;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: var(--them);
     list-style: none;
     text-decoration: none;
     margin-top: 10px;
-    width: 100%;
+    width: 100%; 
+  
+    
 
 }
+
+
+
+
+
+
 .cardpro-title{
     align-self: flex-start !important;
     color: var(--black33b4359);
@@ -50,3 +61,4 @@ margin: 15px;
     grid-auto-flow: column;
     place-content: center;
   } */
+  

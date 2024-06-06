@@ -8,18 +8,25 @@ import 'swiper/css/pagination';
 // import './styles.css';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function SwiperComB({title}) {
+
   return (
     <>
     <div className='swipercomb-div'>
           <span className='swipercomb-title'>{title}</span>
         <Swiper
+            loop={true}
         slidesPerView={1}
         spaceBetween={10}
         pagination={{
           clickable: true,
         }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -34,7 +41,8 @@ export default function SwiperComB({title}) {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
+
         className="mySwiperB"
       >
         <SwiperSlide><CardPro/></SwiperSlide>
