@@ -1,7 +1,7 @@
 import React from 'react'
 import CardCat from '../../Cards/CardCat'
 
-export default function BCatItem({}) {
+export default function c({}) {
 
 
 

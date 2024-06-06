@@ -46,11 +46,31 @@ margin: 15px;
 }
 .cardpro-container img{
     width: 90%;
+    animation: zoom1 4s linear infinite;
+
 }
 .cardpro-container:hover img{
-    transform: scale(.9);
-}
+    /* transform: scale(.9); */
+    animation: zoom 4s linear 1;
 
+}
+@keyframes zoom { 
+    0%{
+      transform: scale(0.5);
+    }
+    100% { 
+      transform: scale(1);
+    }
+  }
+  @keyframes zoom1 { 
+    0%{
+      transform: rotate(-3deg);
+    }
+    100% { 
+        transform: rotate(3deg);
+    }
+  }
+  
   
   /* body {
     background: #e8e9ba;

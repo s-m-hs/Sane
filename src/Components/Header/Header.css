@@ -92,7 +92,7 @@
     display: block;
     border-bottom: 2px solid var(--them);
     transform: scale(0);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
 }
 
 .header-bottom__col__ul>li:hover::after {
@@ -189,7 +189,7 @@
     width: 23rem;
     background-color: var(--them);
     /* transition: all 200ms ease; */
-    animation: move 400ms normal linear;
+    animation: move 300ms normal linear;
 
     border-radius: 15px;
 }
