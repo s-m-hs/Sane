@@ -20,6 +20,8 @@
     position: relative;
     width: 10cqi;
     height: 10cqi;
+    min-width: 11rem;
+    min-height: 11rem;
     float: left;
     margin: 10px;
 
