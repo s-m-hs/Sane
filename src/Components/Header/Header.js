@@ -33,7 +33,7 @@ export default function Header() {
     <div className='container Header'>
 
 
- <div className='row Header-top mt-3 centerr'>
+ <div className='row Header-top  centerr'>
   <div className="col-12 col-md-8 Header-rightSide centerr ">
     <div className='Header-rightSide__div-img'>
 

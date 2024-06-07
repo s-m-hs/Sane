@@ -13,8 +13,8 @@ export default function CardPro({imgSrc,title,price }) {
         {/* <span>368,000</span> */}
         <span className='cardpro-price'>{price}تومان </span>
         <div className='cardpro__icon-div centerr'>
-        <i class="fa-solid fa-cart-plus fa-xl" style={{color:'#14a5af'}} ></i>
-        <i class="fa-solid fa-heart fa-xl" style={{color:'#14a5af'}} ></i>
+        <i class="fa-solid fa-cart-plus " style={{color:'#14a5af'}} ></i>
+        <i class="fa-solid fa-heart " style={{color:'#14a5af'}} ></i>
 
         </div>
 <Link className='cardpro__link'>جزییات بیشتر...</Link>

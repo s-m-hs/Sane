@@ -32,21 +32,23 @@ a,ul,li{
     list-style: none;
 
 }
-
+.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container{
+    max-width: 100vw !important;
+}
 
 :root{
     --white1ffffff:#ffffff;
     --white2fafaff:#fafaff;
-    --gray3bbcbbb:rgb(187, 203, 187);
+    --gray3bbcbbb:#bbcbbb;
     --gray2f0f0ff: #f0f0ff;
     --gray1f2f6fc:#f2f6fc;
     /* --black:#101011; */
     --black1464646:#464646;
     --black22e2e2e:#2e2e2e;
-    --black33b4359:rgb(116 117 117);
-    --white-50:rgb(3, 3, 3);
+    --black33b4359:#747575;
+    --white-50:#030303;
 
-    --them:rgb(20, 165, 175);
+    --them:#14a5af;
     --backgroundColor: rgba(246, 241, 209);
     --colorShadeA: rgb(106, 163, 137);
     --colorShadeB: rgb(121, 186, 156);

@@ -4,6 +4,8 @@
 }
 
 .Header-top {
+    width: 80vw;
+    margin: 20px auto !important;
     border-radius: 15px;
     align-items: center;
     background-color: var(--white1ffffff);
