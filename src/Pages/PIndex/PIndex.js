@@ -9,7 +9,7 @@ import SwiperComC from '../../Components/SwiperComC/SwiperComC'
 
 export default function PIndex() {
   const imgSrc=["../../images/headphon.jpg","../../images/speaker.jpg","../../images/mouse.jpg","../../images/powerbonk.jpg","../../images/هدفون بی سیم.jpg","../../images/download.jpg","../../images/flash).jpg","../../images/key&mouse.jpg","../../images/mousepad.jpg","../../images/kable.jpg","../../images/bag.jpg","../../images/اسپیکر پورتابل.jpg"]
-const imgsrc2= ["../../images/cpu.jpg","../../images/rom.jpg","../../images/main.jpg","../../images/hard .jpg","../../images/cooler.jpg","../../images/kase.jpg","../../images/power.jpg","../../images/modem.jpg","../../images/hard ext.jpg"]
+const imgsrc2= ["../../images/cpu.jpg","../../images/rom.jpg","../../images/main.jpg","../../images/hard .jpg","../../images/cooler.jpg","../../images/kase.jpg","../../images/power.jpg","../../images/modem.jpg","../../images/12400 tray.jpg","../../images/modemtp.jpg","../../images/adata.jpg","../../images/cpu.jpg",]
 const sliderDetail=[
   {img:"../../../images/products/c8f4ce37fea7a15300a2264c73b4ccd925d20dac_1697010738.jpg",title:'هدفون بی سیم',price:'327,000'},
   {img:"../../../images/products/d2c991565182fb5bdc10abd2576e454d9f54ad10_1685442773.jpg",title:' موس A4Teach ',price:'468,000'},

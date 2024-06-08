@@ -1,6 +1,7 @@
 .Header {
     height: 16rem ;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .Header-top {

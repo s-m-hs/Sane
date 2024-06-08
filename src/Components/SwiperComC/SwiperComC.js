@@ -20,8 +20,8 @@ export default function SwiperComC() {
   const progressContent = useRef(null);
   const items = [
     '#ffffff',
-    '#030303',
-    '#14a5af',
+    // '#030303',
+    // '#14a5af',
    
   ];
   const [textColor, setTextColor] = useState(()=>{
