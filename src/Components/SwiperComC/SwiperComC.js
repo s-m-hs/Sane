@@ -75,11 +75,16 @@ export default function SwiperComC() {
 <img style={{position:'absolute',zIndex:'2',width:'100%',height:'100%'}} src="../../images/photo_2024-06-07_23-49-30.jpg"  alt="" />
             </div>
            </SwiperSlide>
-        <SwiperSlide><img src="../../images/photo_2024-06-08_00-04-05.jpg"  alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../../images/4.jpg"  alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../../images/6.jpg"  alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../../images/7.jpg"  alt="" /></SwiperSlide>
-        <SwiperSlide><img src="../../images/5.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-46-29.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-46-42.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-47-04.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-46-53.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-45-54.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-47-01.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-46-56.jpg"  alt="" /></SwiperSlide>
+        <SwiperSlide><img src="../../images/shop photo/photo_2024-06-09_20-46-33.jpg"  alt="" /></SwiperSlide>
+        
+        
       
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

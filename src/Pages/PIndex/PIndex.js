@@ -36,7 +36,7 @@ const sliderDetail2=[
             <div className='row pindex-swiper-row'>
                 <div className='col pindex-swiper-col'>
                 <SwiperCom/>
-<BCatItem imgSrcProp={imgSrc}/>
+<BCatItem />
 <SwiperComB title={'پرفروش ترین ها'} sliderDetailProp={sliderDetail}/>
 <BCatItem imgSrcProp={imgsrc2} />
 <SwiperComB title={'پرفروش ترین های سخت افزار'} sliderDetailProp={sliderDetail2}/>

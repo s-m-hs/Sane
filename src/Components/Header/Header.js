@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
-
+import apiUrl from '../../utils/apiUrl';
 import {Autoplay, EffectCube, Pagination } from 'swiper/modules';
 
 
@@ -17,9 +17,46 @@ import {Autoplay, EffectCube, Pagination } from 'swiper/modules';
 
 export default function Header() {
   const [valeS,setValue]=useState(1)
+  const [mainCategory,setMainCategory]=useState({}) 
 
 
 
+const getCategoryById=()=>{
+  let obj={
+    gid: "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    id: 2,
+    str: "string"
+  }
+async function myAppGet(){
+  const res=await fetch(`${apiUrl}/api/CyCategories/GetItemWChildAndRoot`,{
+    method:'POST',
+    headers:{
+      'Content-Type': 'application/json' 
+    },
+    body:JSON.stringify(obj)
+  }).then(res=>{
+    console.log(res)
+    return res.json()
+  }).then(
+    result=>{
+      // console.log(result)
+      setMainCategory(result)
+      console.log(mainCategory)
+      
+    }
+  )
+}
+myAppGet()
+}
+// console.log(imgSrcProp);
+
+
+
+////////////////////////////
+useEffect(()=>{
+  getCategoryById()
+  // console.log(mainCategory.childs[0].imageUrl)
+},[])
 
   const onmousHandle = (e) => {
     if(e.target.value){
@@ -112,43 +149,17 @@ className={valeS==1 ? 'liiii2-a' : 'liiii2'}
 >لوازم جانبی
   <div className='container header-bottom__col__ul__ul__ul centerr'>
     <div 
-    className={valeS==1 ? 'row-cols-4 ishover' : ' nohover'}
+    className={valeS==1 ? 'row-cols-6 ishover' : ' nohover'}
     >
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/download.jpg" alt="" />
-        کیبرد
 
+{ mainCategory.childs && mainCategory.childs.map((item,index)=>
+  <Link className='header-bottom__col__ul__ul__ul__link2' to={'category'}>
+        <img src={item.imageUrl} alt="" />
+        {item.text} 
+        
       </Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/headphon.jpg" alt="" />
-        هدفون</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/speaker.jpg" alt="" />
-        اسپیکر</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/mouse.jpg" alt="" />
-        موس</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/headphon.jpg" alt="" />
-        هدفون بی سیم</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/key&mouse.jpg" alt="" />
-        کیبرد وموس</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/flash).jpg" alt="" />
-        فلش و رم ریدر</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/powerbonk.jpg" alt="" />
-        پاوربانک</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/mousepad.jpg" alt="" />
-        موس پد</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/kable.jpg" alt="" />
-        کابل</Link>
-      <Link className='header-bottom__col__ul__ul__ul__link2'>
-        <img src="../../images/bag.jpg" alt="" />
-        کیف</Link>
+)}
+
     </div>
   </div>
 </li>

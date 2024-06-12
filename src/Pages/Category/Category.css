@@ -1,0 +1,15 @@
+.bcatitem{
+    margin-top: 80px;
+}
+.category-row{
+    width: 100%;
+}
+.category__cart-div{
+    align-items: center;
+}
+.category__cart-div span{
+    margin: 20px;
+    font-weight: 600;
+    font-size: 0.9cqi;
+    color: var(--black33b4359);
+}
