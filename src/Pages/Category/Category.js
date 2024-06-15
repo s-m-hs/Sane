@@ -15,12 +15,14 @@ import 'swiper/css/navigation';
 
 // import './styles.css';
 import {  Autoplay,EffectFlip, Pagination, Navigation } from 'swiper/modules';
+import Products from '../../Components/Products/Products'
 
 
 export default function Category() {
     const param=useParams()
     const [mainCategory,setMainCategory]=useState({}) 
     const [mainCatChilds,setMainCatChilds]=useState([])
+    const [flagPro,setFlagPro]=useState(false)
 
     const styleRef=useRef()
   
@@ -58,6 +60,11 @@ export default function Category() {
 const changeId=()=>{
   console.log('first')
   styleRef.current.classList.add('category-mySwiperD__hide')
+  // setMainCatChilds([])
+  // setFlagPro(prev=>!prev)
+  setFlagPro(true)
+  console.log(flagPro);
+
    
 }
 //////////////////////////////
@@ -86,21 +93,12 @@ useEffect(()=>{
    </div>
    
 </>)
-   
-  
-
-
-
-
 }
      </div>
-
-
-{ mainCategory.childs !=0 &&  
+{ mainCategory.childs !=0  &&
 <div className='row'>
       <div className='col-2'></div>
         <div className='col-8'>
-
 <>
       <Swiper
         effect={'flip'}
@@ -125,14 +123,26 @@ useEffect(()=>{
       
       </Swiper>
     </>
-
         </div>
         <div className='col-2'></div>
+    </div>  }
+    { mainCategory.childs ==0  &&
+<div className='row'>
+      <div className='col-2'></div>
+        <div className='col-8'>
+<Products/>
+        </div>
+        <div className='col-2'></div>
+    </div>  }
+{flagPro &&
+<div className='row'>
 
-    </div>
+  <div className='col-12'>
+  <Products/>
+  </div>
+</div>
+
 }
-    
-    
    </div>
   )
 }
