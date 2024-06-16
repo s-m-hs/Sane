@@ -1,7 +1,6 @@
 import React from 'react'
 import './Products.css'
-import CardPro from '../Cards/CardPro'
-
+import CardProB from '../Cards/CardProB'
 
 export default function Products() {
     const sliderDetail=[
@@ -28,13 +27,24 @@ export default function Products() {
       ]
   return (
     <div className='container'>
-<div className='row row-cols-auto centerr products-card'>
-{sliderDetail.map(item=>
- <CardPro
-        imgSrc={item.img} title={item.title} price={item.price}
-        />
-        )}
-   
+<div className='row row-cols-4 centerr products-card'>
+
+
+  {sliderDetail.map(item=>
+    <div className='col products-col centerc'><CardProB 
+    imgSrc={item.img} title={item.title} price={item.price}
+    
+    /></div>
+
+  )}
+
+{/* <div className='col'><CardProB/></div>
+<div className='col'><CardProB/></div>
+<div className='col'><CardProB/></div>
+<div className='col'><CardProB/></div>
+<div className='col'><CardProB/></div> */}
+
+
    
 
 </div>
