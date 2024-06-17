@@ -44,11 +44,7 @@ const sliderDetail2=[
 
 
 
-<div>
-  
-  asdasdasd
-  
-</div>
+
 
 <br />
 <br />

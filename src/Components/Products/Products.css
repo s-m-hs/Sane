@@ -1,7 +1,7 @@
 .products-card {
 
     width: 85%;
-    margin: 20px auto !important;
+    margin: 80px auto !important;
 }
 .products-col{
     min-width: 35rem !important;
@@ -9,4 +9,5 @@
     margin-bottom: 50px;
     align-items: center !important;
     flex-wrap: nowrap;
+   
 }

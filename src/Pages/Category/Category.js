@@ -128,11 +128,9 @@ useEffect(()=>{
     </div>  }
     { mainCategory.childs ==0  &&
 <div className='row'>
-      <div className='col-2'></div>
-        <div className='col-8'>
+<div className='col-12'>
 <Products/>
         </div>
-        <div className='col-2'></div>
     </div>  }
 {flagPro &&
 <div className='row'>
