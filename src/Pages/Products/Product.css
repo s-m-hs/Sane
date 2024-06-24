@@ -1,0 +1,15 @@
+.product-row{
+    width: 85%;
+    margin: 20px auto !important;
+}
+.product-right-col{
+    background-color:var(--white1ffffff);
+    box-shadow: 0 0 15px -10px rgb(0,0,0,0.75);
+    height: 80vh;
+}
+.product-left-col{
+    background-color:var(--white1ffffff);
+    box-shadow: 0 0 15px -10px rgb(0,0,0,0.75);
+        height: 80vh;
+
+}

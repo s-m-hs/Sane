@@ -15,7 +15,7 @@ export default function cardprobB({imgSrc,title,price }) {
     <i class="fa-solid fa-heart " style={{color:'#14a5af'}} ></i>
 
     </div>
-<Link className='cardprob__link'>جزییات بیشتر...</Link>
+<Link className='cardprob__link' to='/product' >جزییات بیشتر...</Link>
     <div>
 
     </div>
