@@ -1,6 +1,7 @@
 .mySwiperB{
     margin-top: 25px;
     border-radius: 0px;
+    width: 80% !important;
     /* background-color: var(--them) !important; */
 
 }
