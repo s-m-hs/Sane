@@ -135,8 +135,6 @@ useEffect(()=>{
 
 
     
-
-
       <div className="row header-bottom">
         <div className="col  header-bottom__col">
           <ul className='header-bottom__col__ul centerr'>

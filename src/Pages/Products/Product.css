@@ -1,11 +1,19 @@
+.product-container{
+    height: 100vh;
+}
 .product-row{
-    width: 85%;
+    width: 90%;
     margin: 20px auto !important;
+    background-color:var(--white1ffffff);
+
+
 }
 .product-right-col{
+    
     background-color:var(--white1ffffff);
     box-shadow: 0 0 15px -10px rgb(0,0,0,0.75);
     height: 80vh;
+    overflow: auto;
 }
 .product-left-col{
     background-color:var(--white1ffffff);
