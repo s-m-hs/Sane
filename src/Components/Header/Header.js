@@ -111,18 +111,19 @@ useEffect(()=>{
       </Swiper>
     </>
 </div>
-
-      {/* <img className='Header-rightSide__img' src="../../images/photo_2024-05-30_19-08-29.jpg" alt="" /> */}
-
     </div>
 
+    <div className='Header-rightSide__div-search centerc'>
+      <input className='Header-rightSide__div-search-input' type="text" placeholder='دنبال چی میگردی...؟' />
+    <i class="fa-solid fa-magnifying-glass " style={{ color:'#14a5af' }} ></i>    
 
+</div>
 
   </div>
   <div className="col-12 col-md-4 Header-leftSide centerr">
-    <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-bag-shopping fa-xl" style={{ color: '#ffffff' }}  ></i></div>
-    <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-magnifying-glass fa-xl" style={{ color: '#ffffff' }} ></i>    </div>
-    <div className='Header-leftSide__div centerr'> <i class="fa-regular fa-user fa-xl" style={{ color: '#ffffff' }}></i></div>
+    <div className='Header-leftSide__div centerr'> <i class="fa-solid fa-cart-arrow-down fa-xl" style={{color:'#14a5af'}}></i></div>
+    <div className='Header-leftSide__div centerr'><i class="fa-regular fa-envelope fa-xl" style={{color:'#14a5af'}}></i>    </div>
+    <div className='Header-leftSide__div centerr'> <i class="fa-regular fa-user fa-xl" style={{ color: '#14a5af' }}></i></div>
 
 
     <div className="col-lg-4 Header-leftSide__number-div centerr">

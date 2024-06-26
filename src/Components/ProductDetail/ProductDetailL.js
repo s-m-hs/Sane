@@ -1,14 +1,16 @@
 import React from "react";
 import SwiperComD from '../SwiperComD/SwiperComD'
+import SwiperComE from "../SwiperComE/SwiperComE";
 import './ProductDetailL.css'
 
 
 export default function ProductDetailL() {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row " style={{height:'30%'}}>
         <div className="col">
-<SwiperComD/>
+{/* <SwiperComD/> */}
+<SwiperComE/>
         </div>
       </div>
 
