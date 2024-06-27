@@ -1,5 +1,6 @@
 .Header {
-    height: 16vh ;
+    padding-top: 15px;
+    height: 130px ;
     align-items: center;
     margin-bottom: 50px;
     background-color: var(--white1ffffff);
@@ -82,8 +83,8 @@
     box-shadow: 0 0 15px -10px rgb(0, 0, 0, 0.75);
 }
 .header-bottom{
-    height: 20%;
-    margin-top: 5vh !important;
+    height: 30px;
+    margin-top: 20px !important;
 }
 .header-bottom__col {
     display: flex;
@@ -94,7 +95,7 @@
 }
 
 .header-bottom__col__ul>li {
-    font-size: 1.2cqi;
+    font-size: 1cqi;
     margin-left: 3rem;
     padding-left: 2.5rem;
     margin-top: 20px;
@@ -120,7 +121,7 @@
     min-height: 50rem;
     padding: unset;
     border-left: 1px dotted rgb(204, 202, 202);
-    top: 7.5rem;
+    top: 2.5rem;
     background-color: rgba(255, 255, 255);
     backdrop-filter: blur(30px);
     position: absolute;

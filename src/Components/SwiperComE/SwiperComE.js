@@ -28,7 +28,7 @@ export default function SwiperComE() {
       navigation={true}
       thumbs={{ swiper: thumbsSwiper }}
       modules={[FreeMode, Navigation, Thumbs]}
-      className="mySwiper2"
+      className="mySwiperE2"
     >
        <SwiperSlide>
      <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-652d0606eb21a6b54f50b1c9.webp" />
@@ -57,7 +57,7 @@ export default function SwiperComE() {
       freeMode={true}
       watchSlidesProgress={true}
       modules={[FreeMode, Navigation, Thumbs]}
-      className="mySwiper"
+      className="mySwiperE"
     >
         <SwiperSlide>
      <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-652d0606eb21a6b54f50b1c9.webp" />

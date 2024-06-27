@@ -1,23 +1,28 @@
 .product-container{
-    height: 100vh;
+    height: 600px !important;
+    /* min-height: 400px !important;
+    max-height: 600px !important; */
+    /* display: block; */
 }
 .product-row{
+    height: 100%;
     width: 90%;
     margin: 20px auto !important;
     background-color:var(--white1ffffff);
-
 
 }
 .product-right-col{
     
     background-color:var(--white1ffffff);
     box-shadow: 0 0 15px -10px rgb(0,0,0,0.75);
-    height: 80vh;
+    /* height: 80vh; */
     overflow: auto;
+    height: 100%;
 }
 .product-left-col{
     background-color:var(--white1ffffff);
     box-shadow: 0 0 15px -10px rgb(0,0,0,0.75);
-        height: 80vh;
+        /* height: 80vh; */
+        height: 100%;
 
 }

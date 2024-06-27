@@ -6,15 +6,15 @@ import './ProductDetailL.css'
 
 export default function ProductDetailL() {
   return (
-    <div className="container">
-      <div className="row " style={{height:'30%'}}>
+    <div className="container " style={{height:'100%'}}>
+      <div className="row mt-1" style={{height:'50%'}}>
         <div className="col">
 {/* <SwiperComD/> */}
 <SwiperComE/>
         </div>
       </div>
 
-      <div className="row">
+      <div className="row "style={{height:'30%'}}>
         <div className="col-md-6">
           <div className="ProductDetailL-divright centerc mt-5">
 <span className="ProductDetailL-div__title">موس بی سیم گیمینگ ایسوس AimPoint EVA-02 Edition</span>
