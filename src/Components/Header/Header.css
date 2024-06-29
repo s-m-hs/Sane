@@ -85,6 +85,7 @@
 .header-bottom{
     height: 30px;
     margin-top: 20px !important;
+    position: relative;
 }
 .header-bottom__col {
     display: flex;
@@ -286,3 +287,54 @@ transition:transform 0.1s linear;
 
     display: none;
 }
+
+.sphere {
+    padding: 4px;
+    width: 30px !important;
+    height: 30px;
+    background-color:green;
+    background: radial-gradient(circle at 30% 50%, #ffffff 10%, #d0d0d0 70%);
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+  }
+  
+
+  .sphere2 {
+    padding: 4px;
+    width: 30px !important;
+    height: 30px;
+    background-color:green;
+    background: radial-gradient(circle at 30% 50%, #ffffff 10%, #d0d0d0 70%);
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50px;
+    cursor: pointer;
+  }
+  .sphere3 {    
+    padding: 4px;
+    width: 30px !important;
+    height: 30px;
+    background-color:green;
+    background: radial-gradient(circle at 30% 50%, #ffffff 10%, #d0d0d0 70%);
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 85px;
+    cursor: pointer;
+  }
+  .sphere3 {    
+    padding: 4px;
+    width: 30px !important;
+    height: 30px;
+    background-color:green;
+    background: radial-gradient(circle at 30% 50%, #ffffff 10%, #d0d0d0 70%);
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 85px;
+    cursor: pointer;
+  }

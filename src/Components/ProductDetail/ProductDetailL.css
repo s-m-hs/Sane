@@ -73,3 +73,25 @@ transform: rotate(-5deg);
         background: linear-gradient(31deg, #ffffff  24%, #14a5af 100%)!important;
 
     }
+
+
+/* 
+    .bodyd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+      } */
+      
+    
+      .sphere span{
+        top: 40%;
+        right: 40%;
+        position: absolute;
+      }
+      .sphere img{
+        width: 30px;
+        height: 30px;
+      }

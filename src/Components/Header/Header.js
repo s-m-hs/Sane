@@ -273,6 +273,13 @@ className={valeS==1 ? 'liiii2-a' : 'liiii2'}
             <li>درباره ما</li>
           </ul>
         </div>
+
+
+
+        <img className="sphere3" src="../../../images/eitaa-icon-colorful.png" alt="" />
+        <img className="sphere2" src="../../../images/icons8-instagram-2048.png" alt="" />
+        <img className="sphere" src="../../../images/Jowhareh_galleries_5_poster_13cf28d3-554d-426a-a1b6-79463537f52c.png" alt="" />
+
       </div>
 
 

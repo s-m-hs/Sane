@@ -17,6 +17,9 @@ export default function ProductDetailL() {
       <div className="row "style={{height:'30%'}}>
         <div className="col-md-6">
           <div className="ProductDetailL-divright centerc mt-5">
+   
+
+
 <span className="ProductDetailL-div__title">موس بی سیم گیمینگ ایسوس AimPoint EVA-02 Edition</span>
 <span className="ProductDetailL-div__description">ASUS ROG Gladius III Wireless AimPoint EVA-02 Edition Gaming Mouse</span>
 <span className="ProductDetailL-div__partn">پارت نامبر: 90MP03F0-BMUA00</span>
@@ -48,5 +51,7 @@ export default function ProductDetailL() {
         </div>
       </div>
     </div>
+
+    
   );
 }
