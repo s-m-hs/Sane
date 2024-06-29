@@ -26,3 +26,9 @@
         height: 100%;
 
 }
+.product-tab-div{
+    margin: 5px 30px;
+}
+.product-tab-div li>button{
+    color: inherit !important;
+}

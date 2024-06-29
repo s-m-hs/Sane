@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import ImageMagnifier from '../../utils/magnifier';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -31,23 +32,78 @@ export default function SwiperComE() {
       className="mySwiperE2"
     >
        <SwiperSlide>
-     <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-652d0606eb21a6b54f50b1c9.webp" />
+       <div>
+            <ImageMagnifier 
+                src="../../images/products/mouse/2021-9-a4tech-bloody-a60-652d0606eb21a6b54f50b1c9.webp"
+                width={400}
+                height={300}
+                magnifierHeight={200}
+                magnifierWidth={200}
+                zoomLevel={3}
+                alt="Sample Image"
+            />
+        </div>
+     {/* <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-652d0606eb21a6b54f50b1c9.webp" /> */}
    </SwiperSlide>
 
    <SwiperSlide>
-     <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-652d06068716201626d0f36e.webp" />
+   <div>
+            <ImageMagnifier 
+               src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-652d06068716201626d0f36e.webp"
+                width={400}
+                height={300}
+                magnifierHeight={200}
+                magnifierWidth={200}
+                zoomLevel={3}
+                alt="Sample Image"
+            />
+        </div>
+     {/* <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-652d06068716201626d0f36e.webp" /> */}
    </SwiperSlide>
 
    <SwiperSlide>
-     <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-side-652d0605eb21a6b54f50b1c1 (1).webp" />
+   <div>
+            <ImageMagnifier 
+                src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-side-652d0605eb21a6b54f50b1c1 (1).webp"
+                width={400}
+                height={300}
+                magnifierHeight={200}
+                magnifierWidth={200}
+                zoomLevel={3}
+                alt="Sample Image"
+            />
+        </div>
+     {/* <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-side-652d0605eb21a6b54f50b1c1 (1).webp" /> */}
    </SwiperSlide>
 
    <SwiperSlide>
-     <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-side-652d0605eb21a6b54f50b1c1.webp" />
+   <div>
+            <ImageMagnifier 
+                src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-side-652d0605eb21a6b54f50b1c1.webp" 
+                width={300}
+                height={200}
+                magnifierHeight={100}
+                magnifierWidth={100}
+                zoomLevel={3}
+                alt="Sample Image"
+            />
+        </div>
+     {/* <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-left-side-652d0605eb21a6b54f50b1c1.webp" /> */}
    </SwiperSlide>
 
    <SwiperSlide>
-     <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-bottom-652d06058716201626d0f36a.webp" />
+   <div>
+            <ImageMagnifier 
+                src="../../images/products/mouse/2021-9-a4tech-bloody-a60-bottom-652d06058716201626d0f36a.webp"
+                width={400}
+                height={300}
+                magnifierHeight={200}
+                magnifierWidth={200}
+                zoomLevel={3}
+                alt="Sample Image"
+            />
+        </div>
+     {/* <img src="../../images/products/mouse/2021-9-a4tech-bloody-a60-bottom-652d06058716201626d0f36a.webp" /> */}
    </SwiperSlide>
     </Swiper>
     <Swiper

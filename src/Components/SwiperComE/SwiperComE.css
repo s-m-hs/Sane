@@ -43,7 +43,7 @@
 
   
   .mySwiperE2 {
-    height: 30%;
+    height: 60%;
     width: 100%;
     box-sizing: border-box;
 
@@ -60,7 +60,10 @@
     height: 100%;
     /* opacity: 0.4; */
   }
-  
+  .mySwiperE2  .swiper-slide div{
+    text-align: -webkit-center;
+    width: 65%;
+  }
   .mySwiperE2 .swiper-slide-thumb-active {
     opacity: 1;
   }
@@ -69,6 +72,7 @@
     /* display: block; */
     width: 60%;
     object-fit: contain;
+    position: relative;
   }
   
 
